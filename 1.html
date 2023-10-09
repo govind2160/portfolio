@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Govind varshney - portfolio </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color:black ;
+            color: aliceblue;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+            background-color:rgb(25, 25, 38);
+            
+        }
+        nav ul{
+            display:  flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+            color: white;
+        }
+         nav ul li:hover{
+            color: rgb(124, 124, 221);
+        }
+        nav ul{
+            position :sticky;
+        }
+        
+        main hr{
+            border: 0;
+            background:rgb(120, 118, 216) ;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+        
+    
+        
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstsection{
+            display: flex;
+            justify-content: space-around;
+            margin: 170px 0;
+
+            
+        }
+        .firstsection >div{
+            width: 30%;
+        }
+        .leftsection{
+            margin: 70px 0;
+            font-size: 3rem;
+        }
+        .rightsection img{
+            width: 80%;
+           
+        }
+        .purple{color: rgb(178, 107, 228);
+
+        }
+        .grey{
+            color: gray;
+        }
+       #element {
+        color: rgb(178, 107, 228);
+       }
+       .secondsection{
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+        
+       }
+       .secondsection h1{
+        font-size: 5rem;
+
+       }
+       
+       
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+
+.left {
+  left: 0;
+}
+
+
+.right {
+  left: 50%;
+}
+
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.right::after {
+  left: -16px;
+}
+.content {
+  
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+  color: black;
+}
+
+Media queries - Responsive timeline on screens less than 600px wide
+@media screen and (max-width: 600px) {
+  .timeline::after {
+  left: 31px;
+  }
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  
+  .left::after, .right::after {
+  left: 15px;
+  }
+  .timeline{
+    display: flex;
+    justify-content: center;
+    
+  }
+  .timeline p{
+    color: black;
+  }
+  
+  
+  .right {
+  left: 0%;
+  }
+}
+
+#para1{
+  color: rgb(192, 27, 27);
+}
+.container5{
+        display: flex;
+        justify-content: space-around;
+        height: 75vh;
+    }
+    .contact1{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+    }
+    .contact1 h2{
+        font-size: 4em;
+        color: #ffffffe5;
+    }
+    .contact1 span{
+        font-size: 1.1em;
+        
+    }
+    .contact1 div{
+        font-size: 1.3em;
+        text-decoration: none;
+    }
+    #contact-icon-box{
+        padding-top: 1em;
+        font-size: 2.5em;
+
+    }
+    #contact-icon-box a{
+        color:#4358696a;
+        margin-left: .4em;
+        transition: all 1s;
+    }
+    
+    
+    #contact-icon-box a :hover{
+        color: #f2f2f4;
+        transform: scale(1.2);
+    }
+    .contact2{
+        display: flex;
+        flex-direction: column;
+    }
+    #butn{
+        margin-left: 5%;
+    }
+    .download{
+        margin-top: 10%;
+        text-align: center;
+        font-size: 0.8em;
+        padding: 2.5%;
+        border-radius: 15px;
+        background-color:  #d3d2e1;
+        color: aliceblue;
+        transition: all;
+        transition-duration: .5s;
+    }
+    .download:hover{
+        transform: scale(1.1);
+    }
+    
+    .contact2{
+        margin-top: 1%;
+        gap: 2em;
+    }
+    .input-name , .input-msg{
+            width: 100%;
+            background-color: #262626e1;
+            color: whitesmoke;
+            border: none;
+            padding:10px ;
+            font-family:  Verdana, sans-serif;
+            border-radius: 7px;
+            font-size: 15px;
+    }
+    #submit{
+        
+        font-size: 1em;
+        padding: 1%;
+        border-radius: 15px;
+        background-color:  #de2436;
+        color: aliceblue;
+        transition: all;
+        transition-duration: .5s;
+    }
+    #submit:hover{
+        transform: scale(1.4);
+    }
+    #phone a , #email a{
+        text-decoration: none;
+        color: #ebe9e9;
+    }
+       
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Govind's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>About</li></a>
+                    <a href="#"><li>Services</li></a>
+                    <a href="#"><li>Projects</li></a>
+                    <a href="#"><li>Contact </li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+     
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi,Myself  <span class="purple">Govind </span>  <div>and i am a Passionate </div>
+                
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+            <img src="12.jpeg" alt="">
+            </div>
+
+        </section>
+        <hr>
+        <h1 class="timeline"> timeline </h1>
+        <div class="timeline">
+            <div class="container left">
+              <div class="content">
+                <h2>2023</h2>
+                <p  ><h3  >Ajay Kumar Garg Engineering College
+                  Ghaziabad, India</h3>
+                  Bachelors in Computer Science and Engineering.
+                </p>
+              </div>
+            </div>
+            <div class="container right">
+              <div class="content">
+                <h2>2021</h2>
+                <p>
+                  <h3>Neehar Meera National Sr. Sec. School
+                    Aligarh,India
+                  </h3>
+                  Higher Secondary School, CBSE.
+                </p>
+              </div>
+            </div>
+            <div class="container left">
+              <div class="content">
+                <h2>2019</h2>
+                <p><h3>City Convent School
+                  Aligarh,UP,India 
+                </h3>
+                
+                </p>
+              </div>
+           
+            </div>
+          </div>
+          <hr>
+    </main>
+    <div></div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', ' Coding Enthusiast.'],
+          typeSpeed: 50,
+        });
+      </script>
+      
+      
+      <div id="contact" class="container5">
+        <div class="contact1">
+            <h2>Contact <span>Me</span></h2>
+            
+            <div id="phone" ><a href="tel:9027609387"><img src="./icons3/icons8-phone-24.png" alt="">9027609387</a></div>
+            <!-- <ul id="contact-icon-box">
+                <a  target="_blank" id="facebook" href="https://m.facebook.com/profile.php/?id=100010887400700"><i class='bx bxl-facebook-circle'></i></a>
+                <a  href="#"><i class='bx bxl-twitter' ></i></a>
+                <a target="_blank"  href="https://www.instagram.com/govindvarshney11/"><i class='bx bxl-instagram' ></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/govind-varshney-269095276/"><i class='bx bxl-linkedin-square' ></i></a>
+                <a  target="_blank" href="https://github.com/govind2160"><i class='bx bxl-github'></i></a>
+            </ul> -->
+               
+       
+        <div class="contact2">
+            <input class="input-name" type="text" placeholder="Your Name">
+            <input class="input-name" type="text" placeholder="Your Email">
+            <textarea class="input-msg" name="" id="" cols="80" rows="8" placeholder="Your Message"></textarea>
+            <div id="subt"><button  id="submit">Submit</button></div>
+        </div>
+    </div>
+      
+    
+</body>
+</html>
